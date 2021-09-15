@@ -1,0 +1,36 @@
+Caleb Bergen
+9-15-21
+COMP.4630
+
+1.) We did not have class on 2021-09-08 however I can still come up with other app ideas.
+For Jason's problem, he needs a toothbrush timer. The problem is that plenty of these apps 
+already exists so any app would need to do more than just time tooth brushing and also manage 
+other hygiene stuff that someone might do while brushing their teeth. Maybe an app that can act
+as not only a toothbrush timer but a morning medication tracker or something like that. My 
+idea for this problem is to consolidate a bunch of bathroom routines into one app. For Ted's 
+issue of learning to cook, while many resources exist in other forms to help one learn to cook
+not many of them are in-app form. My app idea would have easy step by step directions in video 
+form as well as useful recipes all with difficulty ratings. In order for this app to really work
+though there would need to be a user uploaded recipes for a variety's sake. 
+
+2.) A pretty common strategy in monetizing free apps these days into jam pack the app with 
+really annoying and invasive ads. This strategy clearly works because every free app has 
+seemingly adopted this strategy however it can really ruin the experience of some apps. A way of
+earning money while also keeping the app experience bearable would be to have minimal ads, with the
+option of purchasing an ad-free version. Another way of monetizing an app would be to lock certain
+features behind a "premium" version with no ads and a full feature set. This way the app is still
+adequately functional in the free version while still incentivizing users to pay.
+
+3.) I would say that the app Tik Tok has a pretty good UI. While it's definitely not perfect the UI
+is simple and effective without much bloat getting in the way of the main purpose of the app of
+watching short videos. The app immediately has an endless scrolling feed of videos upon opening
+it. There are a few other icons over the video which act as a means of interaction with the video
+and a menu bar at the bottom, which doesn't get in the way of anything. It is very easy to get
+sucked into watching video after video and I think this speaks to the effectiveness of the UI in
+staying out of the way and just acting as a means to watch Tik Toks
+
+4.) While we had no discussions in, last class, after the reflection I have done while writing this 
+assignment I think I have decided I want to make an app to help me track something in my life
+but I am not sure what yet. Hopefully, with more class time and reflection time, I will be able
+to figure out what I want to make
+
