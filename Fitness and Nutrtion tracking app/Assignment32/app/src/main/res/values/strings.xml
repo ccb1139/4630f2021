@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Fitness and Nutrition</string>
+
+    <string name="nav_header">Fitness and Nutrition</string>
+    <string name="sub_header">All buttons work and open up new tabs</string>
+
+    <string name="Nutrition">Nutrition Tab</string>
+    <string name="Fitness">Fitness Tab</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+
+    
+
+</resources>
