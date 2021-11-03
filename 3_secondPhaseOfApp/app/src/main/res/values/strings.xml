@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Assignment 3</string>
+
+    <string name="nav_header">Assignment 3</string>
+    <string name="sub_header">All buttons work and open up new tabs</string>
+
+    <string name="ff_abt_me">Fun Facts About Me!</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="ff_btn">More Facts!</string>
+
+    <string name="fact1">I was born in Boston.\n
+        I am from Lowell Massachusetts\n
+        I would like to live in Maine\n
+        My family is from New Hampshire\n
+        My significant other was born in Maine\n
+        I have a pet cat\n
+        I want to go to europe someday!\n
+        </string>
+
+    <string name="inv_port">My Investment portfolio:</string>
+    <string name="uncle_inv_port">My Families\'s Investment portfolio:</string>
+    <string name="brothers_inv_port">My Brothers\'s Investment portfolio:</string>
+
+    <string name="resume_header">My Resume</string>
+    <string name="resume_btn">Click to view</string>
+
+    <string name="weather">The Weather</string>
+    <string name="weather_current_loc">The weather at your current location</string>
+    <string name="weather_where_from">The weather at where I am from</string>
+    <string name="weather_where_want">The weather at where I want to be</string>
+    <string name="weather_where_fam">The weather at where my family is</string>
+    
+
+</resources>
