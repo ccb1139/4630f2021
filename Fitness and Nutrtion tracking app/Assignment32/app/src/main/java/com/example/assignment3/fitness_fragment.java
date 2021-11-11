@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class fun_fact_fragment extends Fragment {
+public class fitness_fragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_fun_facts, container, false);
+        return inflater.inflate(R.layout.fragment_fitness, container, false);
     }
 }

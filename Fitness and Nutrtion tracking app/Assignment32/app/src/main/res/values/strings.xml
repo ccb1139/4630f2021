@@ -10,7 +10,22 @@
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
 
-
     
+    
+    <string-array name="workouts">
+        <item>Cable Row</item>
+        <item>Push up</item>
+        <item>Pull up</item>
+        <item>Curls</item>
+    </string-array>
 
+    <string-array name="workout_descp">
+        <item>Cable Row</item>
+        <item>Push up</item>
+        <item>Pull up</item>
+        <item>Curls</item>
+    </string-array>
+
+
+    <string name="tmp_workout">Temp workout desc.</string>
 </resources>

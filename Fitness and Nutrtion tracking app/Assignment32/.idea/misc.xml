@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/drawable/ic_dumbbell.xml" value="0.39692307692307693" />
         <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/base_item.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/fragment_fitness.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/fragment_fun_facts.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/fragment_invest.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/fragment_nutrition.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/my_row.xml" value="0.5102040816326531" />
         <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/layout/nav_header.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/ccb11/Desktop/4630f2021/Fitness and Nutrtion tracking app/Assignment32/app/src/main/res/menu/drawer_menu.xml" value="0.38697916666666665" />
       </map>

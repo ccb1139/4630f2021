@@ -6,23 +6,28 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
+
+    String s1[], s2[];
+    int images[] = {R.drawable.ic_dumbbell, R.drawable.ic_dumbbell,
+            R.drawable.ic_dumbbell, R.drawable.ic_dumbbell,};
+
+    RecyclerView workouts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +48,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if(savedInstanceState == null){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new fun_fact_fragment()).commit();
+                    new nutrition_fragment()).commit();
             navigationView.setCheckedItem(R.id.nav_fun_facts);
         }
+
+//        ArrayList<base_item> base_item_list = new ArrayList<>();
+//        base_item_list.add(new base_item(R.drawable.ic_breakfast), "line1", "line2");
     }
 
     @Override
@@ -53,11 +61,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()){
             case R.id.nav_fun_facts:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new fun_fact_fragment()).commit();
+                        new nutrition_fragment()).commit();
                 break;
             case R.id.nav_investment_port:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new invest_fragment()).commit();
+                        new fitness_fragment()).commit();
+                //THE RECYLER VIEW THING I NEED TO START OVER ON WHOLE APP
+                workouts = findViewById(R.id.workouts);
+
+                s1 = getResources().getStringArray(R.array.workouts);
+                s2 = getResources().getStringArray(R.array.workout_descp);
+
+                MyAdapter myAdapter = new MyAdapter(this, s1, s2, images);
+                workouts.setAdapter(myAdapter);
+                workouts.setLayoutManager(new LinearLayoutManager(this));
                 break;
             case R.id.nav_share:
                 Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
