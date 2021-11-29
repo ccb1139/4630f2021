@@ -1,0 +1,119 @@
+Caleb Bergen	
+COMP 4630 
+Mobile App development 1
+Designing the Fitness of My App
+	Well written code is an integral element of app design, yet good code only one piece of the 
+puzzle. If an app is to have any sort of success in a market, it can't just be functional it needs to stand 
+out in a sea of other apps all fighting for space on user's phones. There are many elements that go into 
+what determines an apps success. An app developer cannot rely on their programming prowess alone, 
+an understanding of one's competition in the market and how to stand out is vital for success. The 
+process requires more than just polish, an app needs something extra to distinguish it from the 
+competition. One of the most important steps in any development process is research. Specifically, 
+research regarding the competing apps in the market that a developer hopes to break into with their 
+own app. This research should be used to figure out a few things. First, a developer should find out what 
+types of features and functionality that competing apps have implemented into their designs. If a 
+developer's app doesn't have all or most of the same functionality as its competitors, then users won't 
+have much reason to switch apps. In addition to that, it is also critical to understand what kinds of flaws 
+or missing features are present in the competition. This way one's app can have an advantage over 
+existing apps and give users a reason to switch over. This is the process I had to go through when 
+designing my app for this class. In order to design a successful app, it was integral that I not only 
+designed a functional and good-looking app, but I also considered the market I hoped to break into with 
+my final product.
+	I decided early on that in order for my app to be the best it could be, I needed to develop the 
+type of app that played to my strengths, meaning that whatever I chose it needed to be something that I 
+was familiar with. A healthy understanding of my competition with would give me a leg up standing out 
+in the market giving me a better shot at success. I decided on developing an app made for tracking 
+workouts at the gym because I have used plenty of apps made for this purpose and all of them had 
+some problems that I could fix. I know many of the ins and outs of this market because I've been 
+involved in it for the past year. Personally, I have never found an app that does everything I want it to, 
+which I felt allowed for an excellent opportunity to fill a niche that has gone unfilled until now. 
+MyFitnessPal, Lose it!, My Workout Plan, and Footpath are examples the most significant apps in the 
+market that I hope to break into. I have used all of these apps to varying degrees of experience and I 
+know the ins and outs pretty well. Specifically, I want to break down and dissect the apps My Workout 
+Plan and Lose it! to get the bottom line of what these apps do well and what they do poorly so, I can 
+understand how to make my app rise above the shortcoming of these apps. 
+	My Workout Plan is a workout tracking app that allows users to plan and track workouts easily 
+and quickly. The app is pretty popular on the play store with over 500k downloads and a 4.7 star rating. 
+Overall, the app works as intended, users can easily create and log their workouts as well as create a 
+pre-planned routines made up of said exercise. The app has a database of workouts that the users can 
+select from, each with a picture and description of what each workout does. Once an exercise is selected 
+users can enter the number of sets and reps as well as the weight they intend to use. Overall, this works 
+well, and I have done my best to emulate it in my app. In contrast to what works well, the app is also 
+missing the important key feature of the ability to plan out work outs on specific dates. This makes it 
+hard to keep track of which routine to do on which days. For gym goers everywhere this feature is a very 
+important to keeping a regimented workout schedule. Even thought this is possible in a calendar or 
+notes app it is far from convenient. If a day is missed or a routine is changed the user would have to go 
+through and manually change all the workouts. Rescheduling could easily be accomplished automatically 
+in an app.
+	Lose it! is another popular app with over 10 million downloads and a 4.6 star rating on the app 
+store. The main purpose of this app is to allow users to count their calories throughout day, but it also 
+has workout tracking capabilities as well. This app works very well for counting calories, but it is quite 
+lacking in the workout tracking side of things. The app locks workout planning behind a pricy paywall 
+and doesn't even have nearly as many workouts as My Workout Plan if one does pay. Another problem 
+with Lose it! Is that the app isnt very light weight. The user must go through a lot of complicated looking 
+menus and screens to just log a workout out which isnt very intuitive. Overall though the app works as 
+intended with some shortcomings such as cluttered UI and limited exercise selection.
+	Scouting out and analyzing the competition it an integral step in the process in developing an 
+app. Overall both apps are very good at what they set out to do however as discussed earlier, they 
+certainly each have their own shortcomings. My goal was to fill in the gaps left by these two apps while 
+still occupying a similar niche. The gaps left by these apps include future workout planning with the 
+ability to move workouts to different days if rescheduling is needed. In addition to this my app needs to 
+have a good layout and easy to use interface that will allow users to log their exercises easily without 
+locking important features behind a paywall.
+        To accomplish my goal of creating an easy to use, light weight app that allows users to create, 
+track, and plan out their workouts I decided I would need to use a simple three-tab bottom navigation 
+bar design for my app. The first tab holds the workout routines tab, the second holds the routine 
+calendar view, and final the third tab holds the profile tab. Each of these tabs have a distinct and 
+necessary purpose which require their own tabs to accomplish. I decided on three tabs because I felt 
+that it provided users with the optimal amount of user control while keeping the app relatively simple. I 
+took some inspiration of this layout from the Lose it! app which also follows a tab design. However, it 
+has 5 tabs instead of 3 which adds to the apps clutter problem. Along with my reduced clutter layout, I 
+needed to design a clean and simple looking UI to go with it. 
+       I decided I wanted to help my app standout out by giving its own custom UI theme instead of 
+the default one that is built into android studio. I decided to go with a white, green, and purple color 
+theme that felt simple yet pleasing to the eye. The navigation bar itself is solid white with three separate 
+icons and accompanying info text below each icon. My design has no visible dividers between each of 
+the icons, so I decided I needed a way to give the user a clear indication of which tab is currently open. 
+When selected the navigation icons are a light shade of green and the info text underneath is purple. 
+When an icon is not selected both the icon and info text for that tab are gray. I found that colors as 
+opposed to visible dividers were the best way to maintain the clean and clutter free theming, I want the 
+app to have. As for the tab icons I chose 3 simple clip art icons. For the workout routines tab, I chose a 
+dumbbell, for the planning tab I chose a calendar, and finally for the profile tab I chose a simple clip art 
+person. Each of these icons illustrates what a specific tab is for while adding very little visual business for 
+the content displayed on screen. 
+       When the user opens my app, they are greeted by the routine calendar view which displays all 
+the user's current and upcoming routines in an easy-to-read way. I decided on having the app open with 
+the calendar view because I wanted users to have a way to quickly open the app and see which routine, 
+they are doing that day. From my own personal experience, I found that I often forget which routine I 
+am doing on any given day so it was important that users could access this information quickly and 
+easily. The routines are displayed in a list calendar view similar to that of the weekly view in the google 
+calendar app with the current day displayed on at the top. I plan on implementing the ability to tap on a 
+routine to get the list of the workouts in each routine but as of writing that feature is not implemented 
+quite yet. Users can also scroll the list down to view their upcoming routines. I chose this design because 
+I felt it provided users with the most relevant information possible without overloading them with 
+information. I debated displaying the whole month as opposed to just the current week however, I 
+found that there was far too much information that was not immediately relevant. On any given day it 
+most likely wont matter what routine a person is doing in two weeks, all that really matters is what they 
+are doing on the current day with the upcoming days being very easily accessible.
+       On the routine tab is laid out in a similar way to the calendar tab, which a scrolling view of each 
+routine and the exercises associated with them. I wanted this tab to be in keeping with the rest of the 
+apps theme, so the color scheme and fonts are all the same. At the bottom of the page there is a 
+floating action button that allows users to create a new routine. When pressed the button prompts the 
+user to enter a routine name, then places a new empty routine on screen. From there the user can 
+interact with the routine by setting which days the routine will take place on, which will automatically be 
+added to the calendar planning tab. In each routine box there is a button to add an exercise. When 
+pressed, the button prompts the user for an exercise name, how many sets they intend to do, how many 
+repetitions in each set, and the weight amount. When added, the exercise is added to the routine box in 
+a checklist which helps users keep track of which exercises they've already done. In addition to this the 
+set, rep, and weight amounts can easily be edited by tapping on the edit button on top a routine and 
+then simply typing in a new value. The design of this tab is meant to give users a means to easily edit 
+and add exercises to their routines as well as create whole new routines on the fly. This fills the gaps left 
+by the others competing apps as mentioned above. 
+       Finally, there is the profile tab meant to allow users to keep track of their physical attributes. I 
+felt that an account was unnecessary for my app, so I decided to have all data stored locally a user's 
+phone. The profile keeps track of age, height, sex, and weight and when entered will automatically come 
+up with some basic stats for the user such as their BMI. This tab is also in keeping with the rest of the 
+minimal design. Overall, this is the least complicated tab of the app. In conclusion I feel that I have 
+designed an app that effectively fills the gaps in the market and maintains a clean and effective visual 
+style.
+       Resources used: My Workout Plan, Lose it!
