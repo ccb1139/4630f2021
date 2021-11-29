@@ -1,4 +1,9 @@
 This is the term paper for Caleb Bergen
+THREE VERSIONS OF THIS PAPER ARE INCLUDED:
+	WORD DOCUMENT
+	PDF
+	PLAIN TEXT
+ALL THREE ARE THE SAME
 
 Abstract:
 The success of any given app is determined by a few factors such as good code, 
