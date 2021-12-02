@@ -10,4 +10,10 @@
 
     <string name="profile_header">User Profile</string>
 
+    <string-array name="routines">
+        <item>Routine 1</item>
+        <item>Routine 2</item>
+        <item>Routine 3</item>
+    </string-array>
+
 </resources>
