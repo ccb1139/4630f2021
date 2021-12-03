@@ -1,0 +1,22 @@
+HOW TO USE:
+
+Home Screen: 
+- This page is the workout routine scheduling page, it isn't very useful until you've made a routine.
+- Tapping on any of the days will bring up a dialog asking you to select a routine for that day. If
+	there are no options then you can't select anything. If there are options then the routines you 
+	check off will show up underneath the day
+- To clear the week of all routines simply hit the clear button 
+
+Fitness Screen:
+- Pressing the big add button at the bottom of the screen will prompt you to enter the name of a new routine
+	Type in a routine name and press okay to add
+- To remove the routine you just made hit the remove button and type in the ID displayed on the top right of the
+	routine
+- If you want to add an exercise to a routine tap on the routine. Then type in the Name of the exercise, the reps,
+	the sets, and finally the weight. All of those except the name are optional though.
+- The check box next to the exercise you just added is to keep track of what you've already done at the gym
+- If you want to remove an exercise from a routine simply press the x button on the side of the exercise.
+- If you switch tabs or close and reopen the app, it will remember your routines and schedule.
+
+Profile Screen:
+- Users can enter their name, weight, and age and it will be remembered by the app.

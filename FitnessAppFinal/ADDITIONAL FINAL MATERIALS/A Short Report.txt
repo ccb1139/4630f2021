@@ -1,0 +1,11 @@
+Caleb Bergen
+
+My goal was to create an easy-to-use, lightweight app that allows users to create, 
+track, and plan out their workouts. I decided I would use a simple three-tab bottom navigation 
+bar design for my app. The first tab holds the workout routines tab, the second holds the routine 
+calendar view, and final the third tab holds the profile tab. My app is meant to be pure and lightweight, 
+which means that there is no bulk or unneeded features. The three-tab approach allows for 
+that. I allow users to fit create routines and add or remove the features within them. Then they can
+assign a routine to a day of the week. There is also a profile tab that holds a user's name, weight,
+and age so users can track their progress. I think that this approach is best because when I believe
+that when someone wants a workout tracking app they want it to be fast and bloat-free.
