@@ -2,12 +2,10 @@ package com.example.fitnessandnutritionappfinal;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -18,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     //Ref to bottom nav view
     BottomNavigationView bottomNavigationView;
     //===========
+    //For Fragment Communication
+    private FitnessFragment fitFrag;
+    private HomeFragment homeFrag;
 
 
     @Override
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         //For the bottom nav bar
         bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -58,4 +60,5 @@ public class MainActivity extends AppCompatActivity {
         //===========
         });
     }
+
 }

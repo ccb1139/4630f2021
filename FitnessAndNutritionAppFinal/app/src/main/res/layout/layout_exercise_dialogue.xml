@@ -16,12 +16,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Exercise Name"
+            android:hint="@string/exercise_name"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/exReps"
-            android:hint="reps"
+            android:hint="@string/reps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -30,7 +30,7 @@
 
         <EditText
             android:id="@+id/exSets"
-            android:hint="sets"
+            android:hint="@string/sets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -39,7 +39,7 @@
 
         <EditText
             android:id="@+id/exWeight"
-            android:hint="weight"
+            android:hint="@string/weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -53,7 +53,7 @@
         android:id="@+id/okBtnEx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ok"
+        android:text="@string/ok"
         android:layout_marginTop="225dp"
         android:layout_alignParentRight="true"/>
 
@@ -61,7 +61,7 @@
         android:id="@+id/closeBtnEx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Close"
+        android:text="@string/close"
         android:layout_marginTop="225dp"
         android:layout_alignParentLeft="true"/>
 

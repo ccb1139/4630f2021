@@ -1,5 +1,7 @@
 package com.example.fitnessandnutritionappfinal;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +19,15 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class ProfileFragment extends Fragment {
+    private TextView profileHeader;
+    private EditText profileWeight, profileAge, profileName;
+
+    private String weight, age, name;
+
+    public static final String SHARED_PREFS = "sharedPrefs";
+    public static final String NAME = "text1";
+    public static final String AGE = "text2";
+    public static final String WEIGHT = "text3";
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +72,65 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        profileHeader = view.findViewById(R.id.profileHead);
+        profileName = view.findViewById(R.id.profileName);
+        profileAge = view.findViewById(R.id.profileAge);
+        profileWeight = view.findViewById(R.id.profileWeight);
+
+        profileName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(!view.hasFocus()){
+                    saveData();
+                }
+            }
+        });
+        profileWeight.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(!view.hasFocus()){
+                    saveData();
+                }
+            }
+        });
+        profileAge.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(!view.hasFocus()){
+                    saveData();
+                }
+            }
+        });
+
+
+        loadData();
+        updateViews();
+
+        return view;
+    }
+
+    public void saveData(){
+        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putString(NAME, profileName.getText().toString());
+        editor.putString(WEIGHT, profileWeight.getText().toString());
+        editor.putString(AGE, profileAge.getText().toString());
+
+        editor.apply();
+    }
+
+    public void loadData(){
+        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
+        name = sharedPreferences.getString(NAME, "");
+        weight = sharedPreferences.getString(WEIGHT, "");
+        age = sharedPreferences.getString(AGE, "");
+    }
+
+    public void updateViews(){
+        profileName.setText(name);
+        profileAge.setText(age);
+        profileWeight.setText(weight);
     }
 }

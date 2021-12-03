@@ -5,8 +5,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Space;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,10 +24,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     Context context;
     private OnItemClickListener onItemClickListener;
 
+
+
     //For adding exercises
     public interface OnItemClickListener {
         void onItemClick(int position);
     }
+
 
     public void setOnItemClickListener(OnItemClickListener listener) {
         onItemClickListener = listener;
@@ -48,23 +54,86 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return viewHolder;
     }
 
+    public void debugThing(int position){
+
+        for(int j = 0; j < data.get(position).numOfEx; j++){
+            String temp = "CardID: " + String.valueOf(position) + " ex#: " + String.valueOf(j) + " --> " + data.get(position).getExercisesAsStrings(j);
+            Log.d("dataCheck: ", temp);
+        }
+
+    }
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerAdapter.ViewHolder holder, int position) {
+        // current Item is clicked on card
         RoutineItem currentItem = data.get(position);
+        data.get(position).setIdNum(position);
 
-        holder.textView.setText(currentItem.getName());
+        //For adding exercises on click
+        holder.rtnName.setText(currentItem.getName());
+        String idNum = "ID: " + String.valueOf(position);
+        holder.idIndex.setText(idNum);
 
-        Log.d("Position", String.valueOf(position));
+        //debugThing(position);
 
+        // This index is the clicked on spot
         int index = currentItem.getNumOfEx();
         int indexTemp = currentItem.getNumOfExTemp();
-        if(index > indexTemp){
-            TextView exView = new TextView(context);
-            exView.setId(index);
-            exView.setText(data.get(position).getExercisesAsStrings(index-1));
-            exView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT));
-            holder.linearLayout.addView(exView);
+        final int[] exToRemove = {-1};
+
+        //Need to update everytime!
+        holder.linearLayout.removeAllViews();
+
+        for(int i = 0; i < index; i++){
+            //Sets up new linear layout
+            LinearLayout wac = new LinearLayout(context);
+            wac.setId(i);
+            wac.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
+            int orientation = 0;
+            wac.setOrientation(orientation);
+
+            // SETS UP THE NEW EXERCISE
+            CheckBox exView = new CheckBox(context);
+            exView.setText(data.get(position).getExercisesAsStrings(i));
+            exView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            exView.setTextSize(15);
             data.get(position).setNumOfExTemp(index);
+
+            //SETS UP THE SPACE
+            Space space = new Space(context);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, 1.0f);
+            space.setLayoutParams(params);
+
+            //ADDS THE DELETE BUTTON
+            ImageView closeBtn = new ImageView(context);
+            closeBtn.setImageResource(R.drawable.ic_close);
+            closeBtn.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+            //OnClick Listener for Delete Button
+            int positionTmp = position;
+            int iTmp = i;
+            closeBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    data.get(positionTmp).rmvExerciseItem(iTmp);
+                    notifyDataSetChanged();
+                }
+            });
+
+            //ADDS NEW LAYOUT
+            wac.addView(exView);
+            wac.addView(space);
+            wac.addView(closeBtn);
+
+            Log.d("removeTHing", String.valueOf(exToRemove[0]));
+            if(exToRemove[0] != -1){
+                data.get(i).rmvExerciseItem(exToRemove[0]);
+            }
+            else {
+
+            }
+            holder.linearLayout.addView(wac);
+            //ADDS TO BIG ONE
         }
     }
 
@@ -76,13 +145,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView textView;
+        public TextView rtnName;
+        public TextView idIndex;
         public LinearLayout linearLayout;
 
 
         public ViewHolder(@NonNull View itemView, OnItemClickListener listener) {
             super(itemView);
-            textView = itemView.findViewById(R.id.routineNames);
+            rtnName = itemView.findViewById(R.id.routineNames);
+            idIndex = itemView.findViewById(R.id.rnIndexNum);
             linearLayout = itemView.findViewById(R.id.exercises);
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +167,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                     }
                 }
             });
+
+
         }
     }
 }

@@ -8,14 +8,14 @@
         android:id="@+id/rtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Routine Name"
+        android:hint="@string/routine_name"
         android:inputType="text"/>
 
     <Button
         android:id="@+id/okBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ok"
+        android:text="@string/ok"
         android:layout_marginTop="50dp"
         android:layout_alignParentRight="true"/>
 
@@ -23,7 +23,7 @@
         android:id="@+id/closeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Close"
+        android:text="@string/close"
         android:layout_marginTop="50dp"
         android:layout_alignParentLeft="true"/>
 

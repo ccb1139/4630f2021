@@ -12,14 +12,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
-        app:cardBackgroundColor="@color/teal_200">
+        app:cardBackgroundColor="@color/purple_200">
 
+        <TextView
+            android:id="@+id/rnIndexNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
 
         <TextView
             android:id="@+id/routineNames"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="test"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_gravity="top"
@@ -31,13 +39,15 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
             >
 
-            <androidx.constraintlayout.widget.Barrier
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:barrierDirection="top" />
+
         </LinearLayout>
+
+
 
 
     </androidx.cardview.widget.CardView>
